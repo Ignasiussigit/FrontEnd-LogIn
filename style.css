@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: cursive;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+body {
+    background-color: #eee;
+}
+
+.container {
+    height: 100vh;
+    text-align: center;
+}
+
+.container .login-container {
+    background-color: #fff;
+    width: 450px;
+    margin: auto;
+    margin-top: 150px;
+    padding: 30px;
+    border-radius: 20px;
+    /* border: 3px solid #444; */
+    box-shadow: 20px 20px 25px #d0d0d0, -20px -20px 25px whitesmoke;
+    animation: part .2s linear;
+}
+
+.container .login-container .login {
+    /* background-color: aqua; */
+    padding: 15px;
+}
+
+.container .login-container .login .head {
+    margin-top: -69px;
+}
+
+.container .login-container .login h3 {
+    padding: 15px;
+    text-align: left;
+    font-size: 20px;
+    object-fit: cover;
+}
+
+.container .login-container .login #search-box {
+    padding: 12px;
+    width: 350px;
+    border-radius: 5px;
+    font-size: 15px;
+    border-bottom: 3px solid black;
+
+}
+
+.container .login-container .login span {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    /* justify-content: center;
+    align-items: center; */
+    right: 11rem;
+    padding: 10px;
+    color: rgb(72, 72, 209);
+}
+
+.container .login-container .login button {
+    width: 200px;
+    margin-top: 25px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #0eb582;
+    color: #fff;
+}
+
+.deep {
+    padding: 35px;
+    font-size: 25px;
+}
+
+.animasi {
+    background-image: linear-gradient(90deg, #065ba5, #d630f2, #ff002f, #e4ff00, #d630f2, #065ba5);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    animation: animate 5s linear infinite;
+}
+
+
+.container .login-container .login button:hover {
+    background-color: salmon;
+    transition: all .3s linear;
+}
+
+.container .login-container .login .footer {
+    margin-top: 30px;
+}
+
+.container .login-container .login .footer .bawah {
+    display: none;
+}
+
+/* bagian responsive */
+
+@media(max-width: 768px) {
+    .container .login-container {
+        width: 95%;
+    }
+
+    .container .login-container .login #search-box {
+        width: 90%;
+    }
+
+    .container .login-container .login span {
+        width: 90%;
+        text-align: center;
+    }
+
+    .container .login-container .login button {
+        width: 95%;
+    }
+
+    .container .login-container .login .footer .bawah {
+        display: block;
+    }
+}
+
+
+/* bagian animasi */
+
+@keyframes animate {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 300 0;
+    }
+}
+
+@keyframes part {
+    0% {
+        transform: scale(.5) translateY(-10px);
+        opacity: 0;
+    }
+}
